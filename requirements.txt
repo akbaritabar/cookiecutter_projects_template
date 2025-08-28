@@ -1,0 +1,4 @@
+# template for Python projects
+cookiecutter
+# see also the data science template from: https://cookiecutter-data-science.drivendata.org
+# cookiecutter-data-science

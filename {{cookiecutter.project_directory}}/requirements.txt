@@ -1,0 +1,16 @@
+# NOTE
+# my usual practice is to use virtualenv and create a virtual environment called "env" with vanilla python using `python -m virtualenv env` and then `python -m pip install -r requirements.txt`
+
+# for data wrangling
+pandas
+tabulate
+# to read parquet files using pandas
+pyarrow
+# a very fast dataframe library similar to pandas
+polars
+# for parallelization and in-memory database
+duckdb
+# Lightweight IDE to use with Python
+jupyterlab
+# for workflow management
+snakemake

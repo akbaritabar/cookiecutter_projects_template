@@ -1,0 +1,7 @@
+{
+"project_name": "Add a name for project",
+"project_directory": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+"project_description": "This project is focused on: please add a short description for the project.",
+"contact_email": "akbaritabar@demogr.mpg.de",
+"project_team": "John Doe, Jane Doe, and Aliakbar Akbaritabar"
+}
