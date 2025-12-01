@@ -1,6 +1,16 @@
-# To use DuckDB in Python scripts in a SnakeMake workflow
+# This a reproducible workflow using SnakeMake for project {{cookiecutter.project_name}}
 
-If you build your vanilla python environment using the `requirements.txt` that I provided in this directory, `pip` is going to install duckdb, SnakeMake, and their dependencies. 
+This is the reproducible workflow using SnakeMake including the codes, data, reports and files for "{{cookiecutter.project_name}}" project with a team composed of "{{cookiecutter.project_team}}".
+
+{{cookiecutter.project_description}}
+
+Please read below about SnakeMake and how to replicate the analysis pipeline.
+
+To contact, use this email address: {{cookiecutter.contact_email}}
+
+## Note on installation
+
+If you build your vanilla python environment using the `requirements.txt` that I provided in this directory, `uv` (or alternatively `pip`) is going to install duckdb, SnakeMake, and their dependencies. 
 
 # What is SnakeMake?
 
@@ -16,7 +26,7 @@ Please note that while you can use SnakeMake in interactive mode using for insta
 
 After creating the virtual environment using the provided `requirements.txt`, you can open a Powershell or command prompt on Windows or terminal, activate this virtual environment (see hands-on directory's ReadMe) and do `snakemake --version` which should print out a number or `snakemake --help` which should print out a long list of arguments and commands that gives you a lot of freedom to design your workflow and manage it. As of today, July 6, 2025, and for the version `9.5.1`, this help is similar to the one in file `snakemake_help.md` (open it with a text editor).
 
-Now to run the workflow that I have shared, in the terminal, you can do `snakemake -np all` which is a `dry-run` in SnakeMake lingua. This will not run any codes in your pipeline, but it will check everything and report back if something is wrong in syntax, requirements etc.
+Since I suggested to use `uv` to create the environment and install requirements, you would do `uvx snakemake --version` to run snakemake using uv's created environment. Now to run the workflow that I have shared, in the terminal, you can do `snakemake -np all` which is a `dry-run` in SnakeMake lingua. This will not run any codes in your pipeline, but it will check everything and report back if something is wrong in syntax, requirements etc.
 
 When you are sure all is well and ready, you can do `snakemake --cores 4 all` which allocates 4 CPU cores to snakemake to run the rule `all` which is defined on the top of Snakefile to collect all outputs of different steps.
 
