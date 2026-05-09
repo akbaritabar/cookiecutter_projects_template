@@ -40,7 +40,11 @@ Other files that do not fit the above categories go here. For instance, "meeting
 
 ### **workflow_w_snakemake/**
 
-This folder includes an example workflow with `SnakeMake` workflow management tool. It includes a complete folder structure and example scripts and rules, i.e., steps in analysis, outlined in Snakefile.
+This folder includes an example workflow with `SnakeMake` workflow management tool. 
+
+It follows the best practices by the SnakeMake team for a workflow structure. It includes example scripts and rules, i.e., steps in analysis, outlined in Snakefile.
+
+**NOTE**: If you wish to use this workflow, read the ReadMe file included for the description of the structure. You can cut the files in that folder and move them to the root folder of the project, while maintaining the `requirements.txt` and `.gitignore` files and any other folder that is needed, e.g., `other` folder.
 
 ### **ReadMe.md**
 
