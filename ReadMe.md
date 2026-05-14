@@ -11,6 +11,12 @@ Below, I have added an updated approach that simplified by using [uv](https://gi
 2. To use this template with cookiecutter simply do `uvx cookiecutter gh:akbaritabar/cookiecutter_projects_template`
 3. Answer the questions asked and it will create a project in your terminal's working directory using this template. It will include all the files and ReadMe items which now are populated using your answers to the questions about the project.
 
+### Example of terminal showing template's starting questions
+
+Here in the photo you can see a terminal window (top left) with the 5 starting questions that I have defined in the template, shown in highlighted yellow boxes, to fill out the project folder (bottom left) and ReadMe file with descriptions with team members, contact email, project description, etc (left).
+
+![Example of terminal showing template's starting questions](example_cookiecutter_template_starting_questions.png)
+
 ### Steps to extend the project folder using UV and install requirements etc (if needed)
 
 1. In the terminal, cd to the project folder created above, and to use a specific version of Python `uv init --python 3.13`
